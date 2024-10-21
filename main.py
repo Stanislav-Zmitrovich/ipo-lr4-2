@@ -1,7 +1,8 @@
-def square_numbers(numbers):
-    return [x**2 for x in numbers]
+def integer_parts(numbers):
+    return [int(x) for x in numbers]
 
 # Пример использования
-numbers = [1, 2, 3, 4, 5]
-squared_numbers = square_numbers(numbers)
-print(squared_numbers)
+float_numbers = [1.1, 2.5, 3.7, 4.2, 5.9]
+integer_numbers = integer_parts(float_numbers)
+print(integer_numbers)
+

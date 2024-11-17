@@ -1,8 +1,14 @@
-def integer_parts(numbers):
-    return [int(x) for x in numbers]
+# Оригинальный список вещественных чисел
+original_list = [1.5, 2.3, 4.7, 5.0, 6.8]
 
-# Пример использования
-float_numbers = [1.1, 2.5, 3.7, 4.2, 5.9]
-integer_numbers = integer_parts(float_numbers)
-print(integer_numbers)
+# Пустой список для хранения целых частей
+new_list = []
+
+# Обход элементов оригинального списка и добавление их целых частей в новый список
+for number in original_list:
+    new_list.append(int(number))
+
+# Вывод нового списка
+print(new_list)
+
 
